@@ -8,10 +8,9 @@ process.stdin.on('data', (data) => {
     
     if(cmd === 'pwd'){
         pwd();
-    } else if (cmd === 'ls') {
+    }  else if (cmd === 'ls') {
         ls();
-    } else {
-
+    }  else {
         process.stdout.write('You typed: ' + cmd);
         process.stdout.write('\nprompt > ');
     }
